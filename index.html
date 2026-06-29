@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Schools Exhibition</title>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Accessible Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+
+    <!-- ==========================================
+         HEADER / NAVIGATION
+         ========================================== -->
+    <header class="header" role="banner">
+        <div class="container navbar-container">
+            <nav class="navbar" aria-label="Main Navigation">
+                <a href="#" class="logo-link">
+                    <img src="assets/logos/school_logo.png" alt="Premier Schools Exhibition Logo" class="main-logo-img">
+                </a>
+                <ul class="nav-list" id="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#schools" class="nav-link">Schools</a></li>
+                    <li><a href="#pre-schedule" class="nav-link">Pre-Schedule</a></li>
+                    <li><a href="#exhibition" class="nav-link">Exhibition</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#hero" class="btn-register">Register Now <span aria-hidden="true">&rarr;</span></a>
+                    <button class="menu-toggle" id="menu-toggle-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle Navigation Menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         MAIN CONTENT WRAPPER
+         ========================================== -->
+    <main id="main-content">
+
+        <!-- HERO SECTION WITH DUAL-AXIS CONTROLS -->
+        <section class="hero-section" id="hero" aria-label="Introduction and Registration Slider">
+            <div class="hero-slider-container" id="hero-slider-root" tabindex="0">
+                <div class="hero-slider-track" id="hero-slider-track" aria-live="off">
+                    
+                    <!-- Slide 1 -->
+                    <div class="hero-slide active" role="group" aria-roledescription="slide" aria-label="1 of 2: Top 30+ Schools">
+                        <div class="container hero-grid-wrapper">
+                            <div class="hero-left-pane">
+                                <span class="hero-tag-badge">Education Showcase 2026</span>
+                                <h1 class="hero-main-title">Your Child's Future Starts Here Meet India's Top Schools</span></h1>
+                                
+                                <div class="hero-event-badge">
+                                    <div class="badge-block text-side">
+                                        <strong>Education Convention Centre,</strong>
+                                        <span>Salt Lake, Kolkata</span>
+                                    </div>
+                                    <div class="badge-block colored-side">
+                                        <strong>2-3 July 2026</strong>
+                                        <span>Sat-Sun | 10AM - 6PM</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hero-center-graphics" aria-hidden="true">
+                                <div class="graphic-blob blob-tall"><img src="assets/images/school.jpg" alt="Student smiling at primary school uniform layout"></div>
+                                <div class="graphic-blob blob-circle"><img src="assets/images/campus.jpg" alt="Group of students walking down campus grounds"></div>
+                                <div class="graphic-blob blob-pill"><img src="assets/images/sportss.webp" alt="Child participating in physical education activities"></div>
+                            </div>
+
+                            <div class="hero-right-form">
+                                <h2 class="form-title">Enquire Now</h2>
+                                <form action="#" method="POST" class="inquiry-form-element">
+                                    <div class="form-input-field">
+                                        <label for="parent-name-1" class="sr-only">Parent's Name</label>
+                                        <input type="text" id="parent-name-1" placeholder="Parent's Name" required>
+                                    </div>
+                                    <div class="form-input-field">
+                                        <label for="phone-number-1" class="sr-only">Phone number</label>
+                                        <input type="tel" id="phone-number-1" placeholder="Phone number" required>
+                                    </div>
+                                    <div class="form-input-field">
+                                        <label for="grade-select-1" class="sr-only">Which grade are you looking for?</label>
+                                        <select id="grade-select-1" required>
+                                            <option value="" disabled selected>Which grade are you looking for?</option>
+                                            <option value="preschool">Pre-Schools & Early Learning</option>
+                                            <option value="k12">K-12 CBSE Day Schools</option>
+                                            <option value="heritage">Heritage to New-Age Schools</option>
+                                            <option value="international">International Curriculum Schools</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-action-row">
+                                        <button type="submit" class="form-submit-action-btn">
+                                            <span class="icon-arrow">&nearr;</span>
+                                            <span class="text-label">SUBMIT</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 2: Global Admissions">
+                        <div class="container hero-grid-wrapper">
+                            <div class="hero-left-pane">
+                                <span class="hero-tag-badge">Admissions Open</span>
+                                <h1 class="hero-main-title">Discover Schools That<br><span class="highlight-text">Match Your Aspirations</span><br><span class="subtitle-caption">Admissions Made Simple</span></h1>
+                                <div class="hero-event-badge">
+                                    <div class="badge-block text-side">
+                                        <strong>Across Major Cities,</strong>
+                                        <span>Education Events Nationwide</span>
+                                    </div>
+                                    <div class="badge-block colored-side">
+                                        <strong>Upcoming Academic Session</strong>
+                                        <span>Register Today</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-center-graphics" aria-hidden="true">
+                                <div class="graphic-blob blob-tall"><img src="assets/images/hero-child3.jpg" alt="Student participating in school events"></div>
+                                <div class="graphic-blob blob-circle"><img src="assets/images/hero-child1.jpg" alt="Child using microscope lab setups"></div>
+                                <div class="graphic-blob blob-pill"><img src="assets/images/hero-child2.jpg" alt="Students collaborating on computing projects"></div>
+                            </div>
+                            <div class="hero-right-form">
+                                <h2 class="form-title">Book Your Visit</h2>
+                                <form action="#" method="POST" class="inquiry-form-element">
+                                    <div class="form-input-field">
+                                        <label for="parent-name-2" class="sr-only">Parent's Name</label>
+                                        <input type="text" id="parent-name-2" placeholder="Parent's Name" required>
+                                    </div>
+                                    <div class="form-input-field">
+                                        <label for="phone-number-2" class="sr-only">Phone number</label>
+                                        <input type="tel" id="phone-number-2" placeholder="Phone number" required>
+                                    </div>
+                                    <div class="form-input-field">
+                                        <label for="grade-select-2" class="sr-only">Select Preferred Grade</label>
+                                        <select id="grade-select-2" required>
+                                            <option value="" disabled selected>Select Preferred Grade</option>
+                                            <option value="preschool">Early Learning Programs</option>
+                                            <option value="k12">CBSE & State Board Schools</option>
+                                            <option value="heritage">Contemporary Learning Schools</option>
+                                            <option value="international">Global Curriculum Schools</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-action-row">
+                                        <button type="submit" class="form-submit-action-btn">
+                                            <span class="icon-arrow">&nearr;</span>
+                                            <span class="text-label">SUBMIT</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Accessible Control Group for Hero Slider -->
+                <div class="hero-slider-controls">
+                    <button class="hero-control-nav-btn prev" id="hero-prev-control" aria-label="Go to previous slide">&lsaquo;</button>
+                    <button class="hero-control-nav-btn next" id="hero-next-control" aria-label="Go to next slide">&rsaquo;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST LAURELS SECTION -->
+        <section class="trust-laurels-section" aria-label="Key Achievements and Legacy Indicators">
+            <div class="container laurels-container-flex">
+                <div class="laurel-item-card">
+                    <div class="laurel-icon-frame">
+                        <span class="laurel-wreath-vector left"></span>
+                        <div class="laurel-content-numbers">
+                            <span class="numeric-headline">Trusted by</span>
+                            <span class="bold-stat">1 Million+</span>
+                            <span class="subtext-label">Parents</span>
+                        </div>
+                        <span class="laurel-wreath-vector right"></span>
+                    </div>
+                </div>
+                <div class="laurel-item-card">
+                    <div class="laurel-icon-frame">
+                        <span class="laurel-wreath-vector left"></span>
+                        <div class="laurel-content-numbers">
+                            <span class="numeric-headline">22+</span>
+                            <span class="bold-stat">Years</span>
+                            <span class="subtext-label">of Legacy</span>
+                        </div>
+                        <span class="laurel-wreath-vector right"></span>
+                    </div>
+                </div>
+                <div class="laurel-item-card">
+                    <div class="laurel-icon-frame">
+                        <span class="laurel-wreath-vector left"></span>
+                        <div class="laurel-content-numbers">
+                            <span class="numeric-headline">500+</span>
+                            <span class="bold-stat">Participating</span>
+                            <span class="subtext-label">Schools</span>
+                        </div>
+                        <span class="laurel-wreath-vector right"></span>
+                    </div>
+                </div>
+                <div class="laurel-item-card">
+                    <div class="laurel-icon-frame">
+                        <span class="laurel-wreath-vector left"></span>
+                        <div class="laurel-content-numbers">
+                            <span class="numeric-headline">17 Cities</span>
+                            <span class="bold-stat">Across the</span>
+                            <span class="subtext-label">Globe</span>
+                        </div>
+                        <span class="laurel-wreath-vector right"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTINUOUS SLING SLIDER LOGOS -->
+        <section class="participating-logos-section">
+            <div class="container">
+                <h2 class="section-block-title">Our Partner Institutions</h2>
+            </div>
+            
+            <!-- Row 1: Left-to-Right Loop -->
+            <div class="infinite-carousel-container marquee-ltr" id="logo-marquee-row1" tabindex="0" aria-label="Participating schools marquee continuous line one">
+                <div class="marquee-scrolling-track">
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/delhi.png" alt="Delhi Public School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/amity.jpg" alt="Amity International School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/ram.jpg" alt="The Shri Ram School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/pathways.jpg" alt="Pathways World School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/Lotus.png" alt="Lotus Valley International School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/heritage.jpg" alt="Heritage Xperiential Learning School logo">
+                    </div>
+                    <!-- Cloned segments for non-snapping looping viewport visual flow -->
+                    <div class="logo-image-wrapper" aria-hidden="true"><img src="assets/logos/delhi.png" alt=""></div>
+                    <div class="logo-image-wrapper" aria-hidden="true"><img src="assets/logos/amity.jpg" alt=""></div>
+                    <div class="logo-image-wrapper" aria-hidden="true"><img src="assets/logos/ram.jpg" alt=""></div>
+                    <div class="logo-image-wrapper" aria-hidden="true"><img src="assets/logos/pathways.jpg" alt=""></div>
+                    <div class="logo-image-wrapper" aria-hidden="true"><img src="assets/logos/Lotus.png" alt=""></div>
+                    <div class="logo-image-wrapper" aria-hidden="true"><img src="assets/logos/heritage.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <!-- Row 2: Right-to-Left Loop -->
+            <div class="infinite-carousel-container marquee-rtl" id="logo-marquee-row2" tabindex="0" aria-label="Participating schools marquee continuous line two">
+                <div class="marquee-scrolling-track">
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/heritage.jpg" alt="Heritage Xperiential Learning School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/Lotus.png" alt="Lotus Valley International School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/pathways.jpg" alt="Pathways World School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/ram.jpg" alt="The Shri Ram School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/amity.jpg" alt="Amity International School logo">
+                    </div>
+
+                    <div class="logo-image-wrapper">
+                        <img src="assets/logos/delhi.png" alt="Delhi Public School logo">
+                    </div>
+
+                    <!-- Duplicate Items -->
+                    <div class="logo-image-wrapper" aria-hidden="true">
+                        <img src="assets/logos/heritage.jpg" alt="">
+                    </div>
+
+                    <div class="logo-image-wrapper" aria-hidden="true">
+                        <img src="assets/logos/Lotus.png" alt="">
+                    </div>
+
+                    <div class="logo-image-wrapper" aria-hidden="true">
+                        <img src="assets/logos/pathways.jpg" alt="">
+                    </div>
+
+                    <div class="logo-image-wrapper" aria-hidden="true">
+                        <img src="assets/logos/ram.jpg" alt="">
+                    </div>
+
+                    <div class="logo-image-wrapper" aria-hidden="true">
+                        <img src="assets/logos/amity.jpg" alt="">
+                    </div>
+
+                    <div class="logo-image-wrapper" aria-hidden="true">
+                        <img src="assets/logos/delhi.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHOOSE YOUR SCHOOL SECTON -->
+        <section class="choose-school-section" id="schools" aria-label="School Categorization Grid and Mobile Adaptive Slider">
+            <div class="container">
+                <h2 class="section-center-title">Choose the School That Fits You Best</h2>
+                
+                <div class="school-cards-adaptive-slider" id="school-adaptive-track" role="region" aria-label="School curriculum configurations slider context">
+                    <div class="school-cards-grid-layout">
+                        
+                        <!-- Card 1 -->
+                        <article class="school-curriculum-card active-slide-mobile" data-index="0">
+                            <div class="card-image-background-tint">
+                                <img src="assets/images/PRE.jpg" alt="Interior views of an elementary learning room setup" class="card-bg-image">
+                                <div class="gradient-overlay-content-shield"></div>
+                            </div>
+                            <div class="card-interior-text-content">
+                                <h3 class="card-heading-title">Build strong foundations through engaging, play-based learning experiences.</h3>
+                                <p class="card-description-paragraph">Nurturing foundational skills for toddlers and pre-primary children.</p>
+                            </div>
+                        </article>
+
+                        <!-- Card 2 -->
+                        <article class="school-curriculum-card" data-index="1">
+                            <div class="card-image-background-tint">
+                                <img src="assets/images/primary.jpg" alt="High school student smiling in standard secondary school environment" class="card-bg-image">
+                                <div class="gradient-overlay-content-shield"></div>
+                            </div>
+                            <div class="card-interior-text-content">
+                                <h3 class="card-heading-title">Primary & Secondary Schools</h3>
+                                <p class="card-description-paragraph">Comprehensive academic programs designed from elementary through senior grades.</p>
+                            </div>
+                        </article>
+
+                        <!-- Card 3 -->
+                        <article class="school-curriculum-card" data-index="2">
+                            <div class="card-image-background-tint">
+                                <img src="assets/images/future.jpg" alt="Students testing equipment inside a modern chemical laboratory" class="card-bg-image">
+                                <div class="gradient-overlay-content-shield"></div>
+                            </div>
+                            <div class="card-interior-text-content">
+                                <h3 class="card-heading-title">Future-Focused Learning</h3>
+                                <p class="card-description-paragraph">Innovative teaching methods that blend technology, creativity and practical skills.</p>
+                            </div>
+                        </article>
+
+                        <!-- Article 4 -->
+                        <article class="school-curriculum-card" data-index="3">
+                            <div class="card-image-background-tint">
+                                <img src="assets/images/global.jpg" alt="Group of diverse children studying international curricula maps" class="card-bg-image">
+                                <div class="gradient-overlay-content-shield"></div>
+                            </div>
+                            <div class="card-interior-text-content">
+                                <h3 class="card-heading-title">Global Education Programs</h3>
+                                <p class="card-description-paragraph">Internationally recognized curricula that prepare students for opportunities worldwide.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Pagination navigation display nodes exclusively parsed for sub-992px responsive layout scopes -->
+                <div class="mobile-slider-pagination-dots" id="school-slider-dots-container" aria-label="Slide view choices selector controls">
+                    <button class="pag-dot active" aria-label="Go to item panel slide entry one" data-target="0"></button>
+                    <button class="pag-dot" aria-label="Go to item panel slide entry two" data-target="1"></button>
+                    <button class="pag-dot" aria-label="Go to item panel slide entry three" data-target="2"></button>
+                    <button class="pag-dot" aria-label="Go to item panel slide entry four" data-target="3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRE-SCHEDULE CALL TO ACTION SECTION -->
+        <section class="pre-schedule-banner-section" id="pre-schedule" aria-label="Pre-scheduling call to action banner graphic frame">
+            <div class="container schedule-outer-wrapper-box">
+                <div class="schedule-split-inner-grid">
+                    <div class="content-text-pane-block">
+                        <span class="alert-top-subheadline">Plan Your Visit in Advance!</span>
+                        <h2 class="main-schedule-title-text">Reserve Your Preferred Time Slot</h2>
+                        <span class="warning-subtext-anchor">Enjoy a smoother exhibition experience</span>
+                        <div class="action-trigger-container-row">
+                            <a href="#hero" class="btn-schedule-action-trigger">
+                                <span class="arrow-indicator">&nearr;</span>
+                                <span class="action-btn-wording">BOOK YOUR SLOT</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="visual-graphic-pane-block" aria-hidden="true">
+                        <!-- Left blank intentionally to preserve semantic placement matching structural layout parameters -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXHIBITION MUST-VISIT CARD SLIDER SECTION -->
+        <section class="exhibition-highlights-carousel-section" id="exhibition" aria-label="Exhibition Features Slider">
+            <div class="container container-box-scope-limiter">
+                <h2 class="exhibition-section-header-title">Why Attend Our Education Expo</h2>
+                
+                <div class="exhibition-carousel-viewport-outer">
+                    <div class="exhibition-cards-sliding-track-wrapper" id="exhibition-slider-track" role="region" aria-live="polite">
+                        
+                        <!-- Highlight 1 -->
+                        <div class="exhibition-highlight-card-node">
+                            <div class="inner-node-content-padding">
+                                <div class="vector-icon-badge-box">
+                                    <img src="assets/icons/teacher.png" alt="Direct interaction vector icon asset placeholder" class="icon-vector-graphic">
+                                </div>
+                                <h3 class="highlight-node-heading-title">Meet Education Specialists</h3>
+                                <p class="highlight-node-description-paragraph">Connect directly with experienced school representatives and admission teams.</p>
+                            </div>
+                        </div>
+
+                        <!-- Highlight 2 -->
+                        <div class="exhibition-highlight-card-node">
+                            <div class="inner-node-content-padding">
+                                <div class="vector-icon-badge-box">
+                                    <img src="assets/icons/admission.png" alt="Compare curriculum vector icon asset placeholder" class="icon-vector-graphic">
+                                </div>
+                                <h3 class="highlight-node-heading-title">Compare Academic Programs</h3>
+                                <p class="highlight-node-description-paragraph">Evaluate teaching styles, curriculum choices and learning environments.</p>
+                            </div>
+                        </div>
+
+                        <!-- Highlight 3 -->
+                        <div class="exhibition-highlight-card-node">
+                            <div class="inner-node-content-padding">
+                                <div class="vector-icon-badge-box">
+                                    <img src="assets/icons/scholor.png" alt="Exclusive fee structure vector icon asset placeholder" class="icon-vector-graphic">
+                                </div>
+                                <h3 class="highlight-node-heading-title">Learn About Admission Process</h3>
+                                <p class="highlight-node-description-paragraph">Understand eligibility, application timelines and scholarship opportunities.</p>
+                            </div>
+                        </div>
+
+                        <!-- Highlight 4 -->
+                        <div class="exhibition-highlight-card-node">
+                            <div class="inner-node-content-padding">
+                                <div class="vector-icon-badge-box">
+                                    <img src="assets/icons/counselling.png" alt="Explore schools offerings vector icon asset placeholder" class="icon-vector-graphic">
+                                </div>
+                                <h3 class="highlight-node-heading-title"> Campus Facilities</h3>
+                                <p class="highlight-node-description-paragraph">Explore facilities, extracurricular activities and student development programs.</p>
+                            </div>
+                        </div>
+
+                        <!-- Highlight 5 -->
+                        <div class="exhibition-highlight-card-node">
+                            <div class="inner-node-content-padding">
+                                <div class="vector-icon-badge-box">
+                                    <img src="assets/icons/parent.png" alt="On-spot counseling vector icon asset placeholder" class="icon-vector-graphic">
+                                </div>
+                                <h3 class="highlight-node-heading-title">Personalized Guidance</h3>
+                                <p class="highlight-node-description-paragraph">Receive expert advice to choose the best educational journey for your child.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Controls for Exhibition Carousel -->
+                <div class="exhibition-navigation-arrows-row-control">
+                    <button class="exhibition-arrow-btn directional-left" id="exhibition-nav-arrow-prev" aria-label="Scroll left to view past highlights">&larr;</button>
+                    <button class="exhibition-arrow-btn directional-right" id="exhibition-nav-arrow-next" aria-label="Scroll right to view more highlights">&rarr;</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         FOOTER SECTION COMPONENT
+         ========================================== -->
+    <footer class="footer-component-wrapper-block" id="contact" role="contentinfo">
+        <div class="container container-footer-grid-limiter">
+            
+            <div class="footer-grid-column-layout-root">
+                
+                <!-- Col 1: Corporate Branding -->
+                <div class="footer-column-pane brand-identity-card">
+                    <img src="assets/logos/school_logo.png" alt="Premier Schools Exhibition corporate bottom logo asset markup" class="footer-identity-brand-logo-img">
+                </div>
+
+                <!-- Col 2: Location Profile A -->
+                <div class="footer-column-pane info-details-pane-block">
+                    <div class="icon-label-title-wrapper-row">
+                        <span class="location-geo-pin-vector-icon" aria-hidden="true"></span>
+                        <h3 class="address-pane-title-headline">Corporate Office:</h3>
+                    </div>
+                    <p class="address-paragraph-text">Suite B-5, Ballygunge Park Tower,<br>67B Ballygunge Circular Road,<br>Kolkata - 700019</p>
+                </div>
+
+                <!-- Col 3: Location Profile B -->
+                <div class="footer-column-pane info-details-pane-block">
+                    <div class="icon-label-title-wrapper-row">
+                        <span class="location-geo-pin-vector-icon" aria-hidden="true"></span>
+                        <h3 class="address-pane-title-headline">Ahmedabad Office:</h3>
+                    </div>
+                    <p class="address-paragraph-text">12/AA, Swastik Chambers, Near CU<br>Shah College, Ashram Road,<br>Ahmedabad - 380009</p>
+                </div>
+
+                <!-- Col 4: Telephony + Social Media Grid -->
+                <div class="footer-column-pane telecommunications-social-pane-block">
+                    <div class="icon-label-title-wrapper-row">
+                        <span class="telephony-phone-vector-icon" aria-hidden="true"></span>
+                        <h3 class="address-pane-title-headline">Call us on</h3>
+                    </div>
+                    <p class="telephony-numbers-block-paragraph">
+                        <a href="tel:+919674805912" class="telephony-anchor-link">9674805912</a><br>
+                        <a href="tel:+919674585012" class="telephony-anchor-link">9674585012</a>
+                    </p>
+
+                    <div class="social-channels-outer-wrapper-row">
+                        <h4 class="social-channels-label-tag">Follow us on</h4>
+                        <div class="social-links-flex-row-tray">
+                            <a href="#" class="social-icon-wrapper-link" aria-label="Visit our official Instagram profile page"><span class="social-vector instagram-icon"></span></a>
+                            <a href="#" class="social-icon-wrapper-link" aria-label="Visit our official Facebook page feed channel"><span class="social-vector facebook-icon"></span></a>
+                            <a href="#" class="social-icon-wrapper-link" aria-label="Visit our official YouTube media channel network"><span class="social-vector youtube-icon"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Global Trademark / Bottom Legal Attribution Grid Bar -->
+            <div class="footer-copyright-attribution-bottom-row-bar">
+                <p class="legal-attribution-paragraph-wording">Copyright &copy; 2026 | All rights reserved: <span class="company-entity-legal-title">Premier Schools Exhibition</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core App Logic Script Bundle Injection -->
+    <script src="js/app.js"></script>
+</body>
+</html>

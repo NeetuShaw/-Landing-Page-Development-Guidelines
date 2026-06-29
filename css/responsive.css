@@ -1,0 +1,77 @@
+/* ==========================================================================
+   BREAKPOINT OVERRIDES MAPPED UNDER STANDARD SPECIFICATION SCALES 
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+    .hero-main-title { font-size: 38px; }
+    .hero-center-graphics { height: 400px; }
+    .blob-tall { width: 140px; height: 210px; }
+    .blob-circle { width: 150px; height: 150px; }
+    .blob-pill { width: 160px; height: 230px; }
+    .exhibition-highlight-card-node { min-width: calc((100% - 48px) / 3); }
+}
+
+@media (max-width: 992px) {
+    /* Navbar Collapse Architecture */
+    .menu-toggle { display: flex; }
+    .nav-list {
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 90px);
+        background-color: var(--text-white);
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 24px;
+        transition: var(--transition-standard);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        z-index: 9999;
+    }
+    .nav-list.active { left: 0; }
+    .btn-register { display: none; }
+
+    /* Hero Responsive Shift */
+    .hero-grid-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .hero-center-graphics { display: none; } /* Drop graphics layout to preserve hierarchy flow */
+    .hero-left-pane { text-align: center; }
+    .hero-event-badge { margin: 32px auto 0 auto; }
+
+    /* Conversion of Choose Your School Grid to Mobile Touch Slider [Guidelines] */
+    .school-cards-grid-layout {
+        display: flex;
+        transition: transform 0.4s ease-out;
+        width: 100%;
+    }
+    .school-curriculum-card {
+        min-width: 100%;
+        flex-shrink: 0;
+    }
+    .mobile-slider-pagination-dots { display: flex; }
+
+    /* Exhibition Cards Layout Stepdown */
+    .exhibition-highlight-card-node { min-width: calc((100% - 24px) / 2); }
+
+    /* Footer Grid Layout Matrix Collapse */
+    .footer-grid-column-layout-root {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+    .icon-label-title-wrapper-row { justify-content: center; }
+    .social-links-flex-row-tray { justify-content: center; }
+}
+
+@media (max-width: 768px) {
+    .hero-main-title { font-size: 32px; }
+    .main-schedule-title-text { font-size: 28px; }
+    .content-text-pane-block { padding: 40px 24px; text-align: center; }
+    .schedule-split-inner-grid { grid-template-columns: 1fr; background-image: none; }
+    .exhibition-highlight-card-node { min-width: 100%; }
+    .laurels-container-flex { justify-content: center; }
+    .hero-event-badge { flex-direction: column; border-radius: 20px; }
+    .hero-event-badge .badge-block { text-align: center; padding: 12px; }
+}
